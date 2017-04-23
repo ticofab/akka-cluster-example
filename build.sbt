@@ -11,6 +11,7 @@ libraryDependencies ++= {
   Seq(
     "com.typesafe.akka" %% "akka-actor" % akkaVersion,
     "com.typesafe.akka" %% "akka-cluster" % akkaVersion,
-    "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion
+    "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
+    "com.github.romix.akka" %% "akka-kryo-serialization" % "0.5.1"
   )
 }
