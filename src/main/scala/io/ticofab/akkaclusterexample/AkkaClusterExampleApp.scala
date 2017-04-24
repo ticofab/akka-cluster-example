@@ -73,6 +73,7 @@ class Worker extends Actor with ActorLogging {
   override def receive = {
     case s: String =>
       log.info("received string {}", s)
+      Thread.sleep(2000)
       sender ! Ok(s)
   }
 }
